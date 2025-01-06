@@ -2,411 +2,244 @@
 <html>
 <head>
   <title>My first Vue page</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
 </head>
-<body class="w3-black">
 
-    <!-- Icon Bar (Sidebar - hidden on small screens) -->
-    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">
-        <i class="fa fa-home w3-xxlarge"></i>
-        <p>HOME</p>
-      </a>
-  
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large">
-        <i class="fa fa-user w3-xxlarge"></i>
-        <p>ABOUT</p>
-      </a>
-  
-      <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
-        <i class="fa fa-eye w3-xxlarge"></i>
-        <p>HOBBIES</p>
-      </a>
+
+<div class="container">
+    <div class="topnav">
+        <a href="https://www.facebook.com/shandrae.quianzon">Facebook</a>
+        <a href="https://www.linkedin.com/in/shandrae-lois-quianzon-765679288/">LinkedIn</a>
+        <a href="https://www.instagram.com/quiassont/">Instagram</a>
+      </div>
     
-      <a href="#art" class="w3-bar-item w3-button w3-padding-large">
-        <i class="fa fa-star w3-xxlarge"></i>
-        <p>ARTWORKS</p>
-      </a>
-  
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
-        <i class="fa fa-envelope w3-xxlarge"></i>
-        <p>CONTACT</p>
-      </a>
-    </nav>
-  
-    <!-- Navbar on small screens (Hidden on medium and large screens) -->
-    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-      <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-        <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-        <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-        <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">HOBBIES</a>
-        <a href="#art" class="w3-bar-item w3-button" style="width:25% !important">ARTWORKS</a>
-        <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
-      </div>
+    <br>
+    
+    <div class="title">
+      <h1>| Personal Profile Web Page |</h1>
     </div>
-  
-    <!-- Page Content -->
-    <div class="w3-padding-large" id="main">
-      <!-- Header/Home -->
-      <header class="w3-container w3-padding-32 w3-center" id="home" style="background-color: #22121b;">
-        <h1 class="w3-jumbo" style="font-size: 80px;">
-            <span class="w3-hide-small">Hej! I'm</span> Shandrae Quianzon
-        </h1>
-        <img id="img1" src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/yearbook-cropped.jpg?raw=true" alt="Profile Pic" width="300" height="300">
-        <p>A College Student from Asia Pacific College</p>
-      </header>
-  
-      <!-- About Section -->
-      <div class="w3-content w3-center w3-text-white w3-padding-64" id="about">
-        <h2 class="w3-text-light-grey">About Me</h2>
-        <hr style="width:200px" class="center-line">
-        <p>Hello there! Welcome to my first HTML/CSS website!</p>
-        <p>Oh and in case I don't see ya, good afternoon, good evening, and good night! - Truman Burbank, The Truman Show</p>
-  
-      
-      <!-- Grid for pricing tables -->
-      <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
-      <div class="flex-container">
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color w3-xlarge w3-padding-32 w3-text-light-grey">Schools</li>
-              <li class="w3-padding-16">Victory Elijah Christian College (2018-2021)</li>
-              <li class="w3-padding-16">Ignacio Villamor Senior High School (2021-2023)</li>
-              <li class="w3-padding-16">Asia Pacific College (2023-2027)</li>
-            </ul>
-          </div>
-        
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color2 w3-xlarge w3-padding-32 w3-text-light-grey">Achievements</li>
-              <li class="w3-padding-16">Elementary: 1st Place Mask-Making Contestant</li>
-              <li class="w3-padding-16">Senior High School: With High Honors (Grade 11 & 12)</li>
-              <li class="w3-padding-16">College: Honor Student (1st Year)</li>
-            </ul>
-          </div>
-        
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color3 w3-xlarge w3-padding-32 w3-text-light-grey">Course</li>
-              <li class="w3-padding-16">Technical-Vocational Livelihood (TVL) Information and Communications Technology (ICT)</li>
-              <li class="w3-padding-16">Bachelor of Computer Science with Specialization in Cybersecurity and Forensics</li>
-            </ul>
-          </div>
+
+    <div class="grid-container">
+        <div class="item1">ABOUT ME
+
+            <p>Hello there! I'm Shandrae Quianzon from the City of Manila. Welcome to my first HTML/CSS website! </p>
+            <p> Oh and in case I don't see ya, good afternoon, good evening, and good night! - Truman Burbank, The Truman Show</p>
+
+            <br>
+
+            <div style="text-align: center;">
+              <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564944_1712639922638585_417124740721921613_n.jpg?stp=dst-jpg_p480x480_tt6&_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGXKzU_3_GN6nqYORNizX_UTwS1V6YZSxhPBLVXphlLGGQp1qKwxTk_qebu3oXj99SIyZZJXNNjBKF-HEmxcAls&_nc_ohc=_luyzMQfmwkQ7kNvgG6bDF-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGXO9JIYvxnrC2lZmC7aLvn6UEuneWboPDGq9wW3kitsg&oe=6773D78B" alt="Graduation Photo" style="width: 280px; height: 400px;">
+            </div>
+
+            <br>
+
         </div>
-        
-      
-      <!-- End Grid/Pricing tables -->
-      </div>
-  
-      <!--IT Experience-->
-      <h3 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h3>
-      <p class="w3-wide">Network Configuration</p>
-      <div class="w3-white">
-        <div class="custom-color7" style="height:28px;width:70%"></div>
-      </div>
-      <p class="w3-wide">Coding</p>
-      <div class="w3-white">
-        <div class="custom-color7" style="height:28px;width:56%"></div>
-      </div>
-      <p class="w3-wide">Digital Art</p>
-      <div class="w3-white">
-        <div class="custom-color7" style="height:28px;width:94%"></div>
-      </div><br><br>
-      
-      <div class="flex-container">
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color4 w3-xlarge w3-padding-32 w3-text-light-grey">Software</li>
-              <li class="w3-padding-16">Windows 7 and 10 Operating System Installation</li>
-              <li class="w3-padding-16">Windows Server 2012 r2 Configuration</li>
-              <li class="w3-padding-16">Ubuntu Linux Installation</li>
-            </ul>
-          </div>
-        
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color5 w3-xlarge w3-padding-32 w3-text-light-grey">Hardware</li>
-              <li class="w3-padding-16">Setting up Computer Networks & Servers</li>
-              <li class="w3-padding-16">Assembling/Disassembling Computer Systems</li>
-              <li class="w3-padding-16">Patch Panel Networking</li>
-            </ul>
-          </div>
-        
-          <div class="flex-box">
-            <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-              <li class="custom-color6 w3-xlarge w3-padding-32 w3-text-light-grey">Applications</li>
-              <li class="w3-padding-16">Basic Python, Java, HTML, MySQL</li>
-              <li class="w3-padding-16">Microsoft 365, Visual Studio Code, Oracle VirtualBox</li>
-              <li class="w3-padding-16">Figma, Canva, Ibis Paint X, Medibang, FireAlpaca</li>
-            </ul>
-          </div>
+
+
+        <div class="item2">
+
+            <div class="header">
+                <h1>Education</h1>
+            </div>
+              
+              
+              <div class="education-flex">
+                <div class="education">
+                  <h2>Schools Attended</h2>
+                  <ul>
+                    <li>Elementary: O.B Montessori Sta. Ana Manila (2012-2017) </li>
+                    <li>Junior High: Peniel Integrated Christian Academy of Rizal (2017-2018) </li>
+                    <li>Junior High: Victory Elijah Christian College (2018-2021) </li>
+                    <li>Senior High: Ignacio Villamor Senior High School (2021-2023) </li>
+                    <li>College: Asia Pacific College (2023-2027) </li>
+                  </ul>
+                </div>
+                
+                <div class="education">
+                  <h2>Achievements</h2>
+                  <ul>
+                    <li> Elementary: 1st Place Mask-Making Contestant </li>
+                    <li> Senior High School: With High Honors (Grade 11 & 12) </li>
+                    <li> College: Honor Student (1st Year) </li>
+                  </ul>
+                </div>
+                
+                <div class="education">
+                  <h2>Course</h2>
+                  <ul>
+                    <li> Senior High School: Technical-Vocational Livelihood (TVL) Information and Communications Technology (ICT) </li>
+                    <li> College: Bachelor of Computer Science with Specialization in Cybersecurity and Forensics </li>
+                  </ul>
+                </div>
+              </div>
+            
+
+            <br> <br>
+
         </div>
-  
-      <!--IT Experience-->
-      <br>
-      <!--Goals in Life-->
-      <h3 class="w3-padding-16 w3-center w3-text-light-grey">Goals in Life/Dreams</h3>
-      <p class="w3-center">An international volunteer and one of Jehovah's Witnesses, sharing Bible-based advice and God's promises for a future free of suffering, sickness, and even death. </p>
-      <p class="w3-center">My love for God, Jehovah, and for people motivates me to spread this hope alongside fellow volunteers from over 240 lands.</p>
-                  
-          
-      <div class="preaching-jw">
-          <div class="preaching">
-              <a target="_blank" href="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg">
-                  <img src="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg" alt="Preaching the Good News" style="width: 460px; height: 280px;">
-              </a>
-              <div class="desc">Sharing Good News From the Bible</div>
+
+
+        <div class="item3">
+
+            <div class="header">
+                <h1>Goals in Life/Dreams</h1>
+            </div>
+
+            <br>
+
+            <p>An international volunteer and one of Jehovah's Witnesses, sharing Bible-based advice and God's promises for a future free of suffering, sickness, and even death. </p>
+            <p>My love for God, Jehovah, and for people motivates me to spread this hope alongside fellow volunteers from over 240 lands.</p>
+        
+
+            <div class="preaching-jw">
+              <div class="preaching">
+                  <a target="_blank" href="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg">
+                      <img src="https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg" alt="Preaching the Good News" style="width: 460px; height: 280px;">
+                  </a>
+                  <div class="desc">Sharing Good News From the Bible</div>
+              </div>
+              <div class="preaching">
+                  <a target="_blank" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ec1464-d899-400a-b608-c48c76b500d2/dctti65-aadb7001-929e-4a70-9d35-0650d4aec294.jpg/v1/fill/w_1600,h_1130,q_75,strp/spider_man__into_the_spider_verse___gwen_by_patrickbrown_dctti65-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzMCIsInBhdGgiOiJcL2ZcLzQ5ZWMxNDY0LWQ4OTktNDAwYS1iNjA4LWM0OGM3NmI1MDBkMlwvZGN0dGk2NS1hYWRiNzAwMS05MjllLTRhNzAtOWQzNS0wNjUwZDRhZWMyOTQuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ZRPnEbzSiwohYakW6ZLS0UMicgxzghWq5giiPo5P8m0">
+                      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49ec1464-d899-400a-b608-c48c76b500d2/dctti65-aadb7001-929e-4a70-9d35-0650d4aec294.jpg/v1/fill/w_1600,h_1130,q_75,strp/spider_man__into_the_spider_verse___gwen_by_patrickbrown_dctti65-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTEzMCIsInBhdGgiOiJcL2ZcLzQ5ZWMxNDY0LWQ4OTktNDAwYS1iNjA4LWM0OGM3NmI1MDBkMlwvZGN0dGk2NS1hYWRiNzAwMS05MjllLTRhNzAtOWQzNS0wNjUwZDRhZWMyOTQuanBnIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ZRPnEbzSiwohYakW6ZLS0UMicgxzghWq5giiPo5P8m0" alt="Animation demos">
+                  </a>
+                  <div class="desc">Aspiring 2D professional artist/animator</div>
+              </div>
           </div>
-  
-          <div class="preaching">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true" alt="Animation demos">
-              </a>
-              <div class="desc">Aspiring 2D professional artist/animator</div>
-          </div>
-      </div>
-          
-      <br> 
-          
-      <div class="gallery-container">
-          <div class="gallery">
-              <a target="_blank" href="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg">
-                  <img src="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg" alt="Cat and Piano">
-              </a>
-              <div class="desc">Learning to Play Piano</div>
-          </div>
-  
-          <div class="gallery">
-              <a target="_blank" href="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png">
-                  <img src="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png" alt="gojira" style="width: 400px; height: 280px;">
-              </a>
-              <div class="desc"> Travel to Japan for their Cherry Blossoms and Godzilla attractions </div>
-          </div>
-  
-          <div class="gallery">
-              <a target="_blank" href="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif">
-                  <img src="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif" alt="catnapped">
-              </a>
-              <div class="desc"> Have a cat (TOP PRIORITY) </div>
-          </div>
-      </div>
-  
-      <!--Goals in Life-->
-      <br>
-      <!-- Hobby Section -->
-      <div class="w3-container w3-center" id="photos" style="padding: 16px">
-        <h3 class="w3-padding-16 w3-center w3-text-light-grey">Hobbies and Interests</h3>
-  
+
+          <br> 
+
           <div class="gallery-container">
               <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true">
-                  <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true" alt="Digital Drawing" width="600" height="400">
+                  <a target="_blank" href="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg">
+                      <img src="https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg" alt="Cat and Piano">
                   </a>
-                  <div class="desc">Digital Drawing</div>
+                  <div class="desc">Learning to Play Piano</div>
               </div>
-       
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true" alt="A Quiet Place fanart" width="600" height="400">
-              </a>
-              <div class="desc">Reading Novels</div>
-          </div>
-  
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true" alt="Video Games" width="600" height="400">
-              </a>
-              <div class="desc">Video Games</div>
-          </div>
-      
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true" alt="Cats" width="600" height="400">
-              </a>
-              <div class="desc">Cats</div>
-          </div>
-      
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true" alt="Dinosaurs" width="600" height="400">
-              </a>
-              <div class="desc">Dinosaurs</div>
-          </div>
-  
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true" alt="Nature" width="600" height="400">
-              </a>
-              <div class="desc">Nature</div>
-          </div>
-  
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true" alt="Godzilla" width="600" height="400">
-              </a>
-              <div class="desc">Watching Movies/Shows</div>
-          </div>
-      
-          <div class="gallery">
-              <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true">
-                <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true" alt="Ukulele" width="600" height="400">
-              </a>
-              <div class="desc">Playing/Listening to Music</div>
-          </div>
-      </div>
-      </div>
-  
-  
-  <!-- Art Gallery -->
-  <h3 class="w3-padding-16 w3-center w3-text-light-grey" id="art">Art Gallery</h3>
-  <p class="w3-center w3-large">Some of my best artworks</p>
-      <div class="w3-container w3-center" style="padding: 16px">
-  
-          <div class="gallery-container">
               <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true" alt="Cat and B12" width="600" height="400">
+                  <a target="_blank" href="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png">
+                      <img src="https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png" alt="gojira" style="width: 400px; height: 280px;">
                   </a>
-                  <div class="desc">Stray Fanart</div>
+                  <div class="desc"> Travel to Japan for their Cherry Blossoms and Godzilla attractions </div>
               </div>
-             
               <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true" alt="A Quiet Place fanart" width="600" height="400">
+                  <a target="_blank" href="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif">
+                      <img src="https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif" alt="catnapped">
                   </a>
-                  <div class="desc">A Quiet Place Fanart</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true" alt="BB8 & D-0" width="600" height="400">
-                  </a>
-                  <div class="desc">BB8 & D-0</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true" alt="Artwork of an Eagle and Turtle" width="600" height="400">
-                  </a>
-                  <div class="desc">The Eagle and Turtle</div>
-              </div>
-          
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true" alt="Artwork of Blue & Beta from Jurassic World" width="600" height="400">
-                  </a>
-                  <div class="desc">Blue & Beta from Jurassic World</div>
-              </div> 
-          
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true" alt="19th Anniversary Gift for Parents" width="600" height="400">
-                  </a>
-                  <div class="desc">19th Anniversary Gift for Parents</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true" alt="Hollow Knight Pure Vessel fanart" width="600" height="400">
-                  </a>
-                  <div class="desc">Hollow Knight Pure Vessel Fanart</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true" alt="Hollow Knight OC Artwork" width="600" height="400">
-                  </a>
-                  <div class="desc">Hollow Knight Vale OC</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true" alt="Hollow Knight The Knight fanart" width="600" height="400">
-                  </a>
-                  <div class="desc">Hollow Knight The Knight Fanart</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true" alt="git gud" width="600" height="400">
-                  </a>
-                  <div class="desc">Hollow Knight Hornet Fanart</div>
-              </div>
-  
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true" alt="Cat OC" width="600" height="400">
-                  </a>
-                  <div class="desc">Cat Sona OC</div>
-              </div>
-          
-              <div class="gallery">
-                  <a target="_blank" href="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true">
-                    <img src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Spring3.png?raw=true" alt="Velociraptor in Cherry Blossoms" width="600" height="400">
-                  </a>
-                  <div class="desc">Spring Season</div>
+                  <div class="desc"> Have a cat (TOP PRIORITY) </div>
               </div>
           </div>
-      </div>
-  
-    <!-- Contact Section -->
-    <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-      <h2 class="w3-text-light-grey">Contact Me</h2>
-      <hr style="width:200px" class="w3-opacity">
-  
-      <div class="w3-section">
+
+          <br> <br>
+
+
+        </div>  
+
+
+        <div class="item4">
+
+            <div class="header">
+                <h1>IT Experience</h1>
+            </div>
+
+            <div class="it-flex">
+              <div class="it">
+                  <h2>Software</h2>
+                  <ul>
+                    <li>Windows 7 and 10 Operating System Installation & Configuration</li>
+                    <li>Windows Server 2012 r2 Configuration</li>
+                    <li>Ubuntu Linux Installation</li>
+                  </ul>
+              </div>
+              <div class="it">
+                  <h2>Hardware</h2>
+                  <ul>
+                    <li>Setting up Computer Networks & Servers</li>
+                    <li>Assembling/Disassembling Computer Systems</li>
+                  </ul>
+              </div>
+              <div class="it">
+                  <h2>Applications</h2>
+                  <ul>
+                    <li>Basic Python, Java, HTML, MySQL</li>
+                    <li>Microsoft 365, Visual Studio Code, Oracle VirtualBox</li>
+                    <li>Figma, Canva, Ibis Paint X, Medibang, FireAlpaca</li>
+                  </ul>
+              </div>
+          </div>           
+            
+            <br> <br>
+
+        </div>
+
+
+        <div class="item5">
+
+          <div class="header">
+            <h1>Hobbies & Interests</h1>
+            </div>
         
-        <p>
-          <b>
-            <i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
-            <a class="five" href="https://www.facebook.com/shandrae.quianzon" target="_blank">My Facebook Page
-            </a>
-          </b>
-        </p>
+            <br> <br>
+
+            <div class="gallery-container">
+                <div class="gallery">
+                    <a target="_blank" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462583135_930274989038111_6160417908696241092_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGSFWoWMf2hVtNmGLUDRz8hMEQDr52qgs8wRAOvnaqCz-GhRFdl5pJY5gHlFSlh4-nw9za3X62kOybze6-GhdMK&_nc_ohc=SVmUNhr3-GEQ7kNvgFNEv6S&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE3cDIhGtbo2mnjBkhFjhE3Fqer-tSuuSKtvHc0FmR-4g&oe=67725E06">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462583135_930274989038111_6160417908696241092_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGSFWoWMf2hVtNmGLUDRz8hMEQDr52qgs8wRAOvnaqCz-GhRFdl5pJY5gHlFSlh4-nw9za3X62kOybze6-GhdMK&_nc_ohc=SVmUNhr3-GEQ7kNvgFNEv6S&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE3cDIhGtbo2mnjBkhFjhE3Fqer-tSuuSKtvHc0FmR-4g&oe=67725E06" alt="Digital Drawing" width="600" height="400">
+                    </a>
+                    <div class="desc">Digital Drawing</div>
+                </div>
+         
+            <div class="gallery">
+                <a target="_blank" href="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388179700i/7027.jpg">
+                  <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388179700i/7027.jpg" alt="A Quiet Place fanart" width="600" height="400">
+                </a>
+                <div class="desc">Reading Novels</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462559900_1628186954767613_3847619712707227123_n.png?stp=dst-png_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHzVpYaKzI3rLX9Zz9SZzdwDSeHA7B3EsANJ4cDsHcSwAPC_QBLEuunyzwHByqaxi5m5MD35IfCSYMKMunC61mf&_nc_ohc=noMl9fc1xcgQ7kNvgHAdTmL&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFG4I6uG3AjByjpz4Ez5djhiuFvUxQR9ux_fM1Qap0d_A&oe=67726F6F">
+                  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462559900_1628186954767613_3847619712707227123_n.png?stp=dst-png_s640x640&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHzVpYaKzI3rLX9Zz9SZzdwDSeHA7B3EsANJ4cDsHcSwAPC_QBLEuunyzwHByqaxi5m5MD35IfCSYMKMunC61mf&_nc_ohc=noMl9fc1xcgQ7kNvgHAdTmL&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFG4I6uG3AjByjpz4Ez5djhiuFvUxQR9ux_fM1Qap0d_A&oe=67726F6F" alt="Video Games" width="600" height="400">
+                </a>
+                <div class="desc">Video Games</div>
+            </div>
         
-        <p>
-          <b>
-            <i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
-            <a class="five" href="https://www.instagram.com/quiassont/" target="_blank">Find me on Instagram
-            </a>
-          </b>
-        </p>
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462566378_860869206125908_5726592650820963183_n.png?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGznmGT5JxU6JB3vTVQLLmbSd37mFDIgmBJ3fuYUMiCYC99IE52D4Pd5qQ1v_UbO49I4KhSrV8R4DDWW1KzPRlw&_nc_ohc=PXDIFdMU41IQ7kNvgEhSigC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHQ999e2XG6wJdbvROnBXVJYvuQ5HTPNU05sALeUxb0WA&oe=677282D4">
+                  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462566378_860869206125908_5726592650820963183_n.png?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGznmGT5JxU6JB3vTVQLLmbSd37mFDIgmBJ3fuYUMiCYC99IE52D4Pd5qQ1v_UbO49I4KhSrV8R4DDWW1KzPRlw&_nc_ohc=PXDIFdMU41IQ7kNvgEhSigC&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHQ999e2XG6wJdbvROnBXVJYvuQ5HTPNU05sALeUxb0WA&oe=677282D4" alt="Cats" width="600" height="400">
+                </a>
+                <div class="desc">Cats</div>
+            </div>
         
-        <p>
-          <b>
-            <i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
-            <a class="five" href="https://www.linkedin.com/in/shandrae-lois-quianzon-765679288/" target="_blank">Take a look at my LinkedIn Profile
-            </a>
-          </b>
-        </p>
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/462583170_1631341244482574_8982108802146148242_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGElVembXDGcxYEj7-uKCog8dKmjeouGPPx0qaN6i4Y88I-FaC4dn73hdDj7cy3mpLOniAnKeciu3ahltZOsmgX&_nc_ohc=9pEuAP1o5kkQ7kNvgFug7Uo&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QE6eFHwTQuZ_jcqkWGw1Rdr70vLkdmFxhhEFzD6B2RizA&oe=67724BC0">
+                  <img src="https://scontent.fmnl4-2.fna.fbcdn.net/v/t1.15752-9/462583170_1631341244482574_8982108802146148242_n.png?stp=dst-png_s480x480&_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGElVembXDGcxYEj7-uKCog8dKmjeouGPPx0qaN6i4Y88I-FaC4dn73hdDj7cy3mpLOniAnKeciu3ahltZOsmgX&_nc_ohc=9pEuAP1o5kkQ7kNvgFug7Uo&_nc_zt=23&_nc_ht=scontent.fmnl4-2.fna&oh=03_Q7cD1QE6eFHwTQuZ_jcqkWGw1Rdr70vLkdmFxhhEFzD6B2RizA&oe=67724BC0" alt="Dinosaurs" width="600" height="400">
+                </a>
+                <div class="desc">Dinosaurs</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564960_466882429341000_8414735242100874708_n.png?stp=dst-png_s640x640&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGD62djnaXYaS7awPGlbixadeaTDLsHNTV15pMMuwc1NWRee9L9Ynfb9gbD1klbFNHNrrp7bToaOIiO6Z1kz3RH&_nc_ohc=kPlM0dvjTwMQ7kNvgFiIc0i&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEj7I7EkUDWPXnnlfFfjv-NaSBMn9wxJ9Rn4fywUPKzYg&oe=6772654A">
+                  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462564960_466882429341000_8414735242100874708_n.png?stp=dst-png_s640x640&_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGD62djnaXYaS7awPGlbixadeaTDLsHNTV15pMMuwc1NWRee9L9Ynfb9gbD1klbFNHNrrp7bToaOIiO6Z1kz3RH&_nc_ohc=kPlM0dvjTwMQ7kNvgFiIc0i&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEj7I7EkUDWPXnnlfFfjv-NaSBMn9wxJ9Rn4fywUPKzYg&oe=6772654A" alt="Nature" width="600" height="400">
+                </a>
+                <div class="desc">Nature</div>
+            </div>
+
+            <div class="gallery">
+                <a target="_blank" href="https://i.pinimg.com/originals/08/39/36/083936a05d74e4f1a99c8e78972919e9.jpg">
+                  <img src="https://i.pinimg.com/originals/08/39/36/083936a05d74e4f1a99c8e78972919e9.jpg" alt="Godzilla" width="600" height="400">
+                </a>
+                <div class="desc">Watching Movies/Shows</div>
+            </div>
         
-      </div><br>
-  
-    <!-- End Contact Section -->
-    </div>
-    
-      <!-- Footer -->
-      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        <p class="w3-medium">If you see this message, here's a free cookie 🍪 Thank you for visiting my first website.</p>
-      <!-- End footer -->
-      </footer>
-  
-    <!-- END PAGE CONTENT -->
-    </div>
+            <div class="gallery">
+                <a target="_blank" href="https://scontent.xx.fbcdn.net/v/t1.15752-9/462572060_1514279395955700_6059773931246226213_n.png?stp=dst-png_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeF_6SXNkwU6ddL-7RdYgPyAN_qHk6VF6Tg3-oeTpUXpOCDyK0QvlG2o4XbGI8sz8vgAv0Sfo9Fx36TdiD79zfUb&_nc_ohc=pj12fDL3ySMQ7kNvgEZUX1a&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE0gFCCgRnckTAKJB4aGKGAGd2srpvRkfavVcyis2MSSA&oe=67728359">
+                  <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462572060_1514279395955700_6059773931246226213_n.png?stp=dst-png_s480x480&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeF_6SXNkwU6ddL-7RdYgPyAN_qHk6VF6Tg3-oeTpUXpOCDyK0QvlG2o4XbGI8sz8vgAv0Sfo9Fx36TdiD79zfUb&_nc_ohc=pj12fDL3ySMQ7kNvgEZUX1a&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QE0gFCCgRnckTAKJB4aGKGAGd2srpvRkfavVcyis2MSSA&oe=67728359" alt="Ukulele" width="600" height="400">
+                </a>
+                <div class="desc">Playing/Listening to Music</div>
+            </div>
+            </div>
+        </div>
+        </div>
 
 
 <div id="app">
