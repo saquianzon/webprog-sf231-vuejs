@@ -1,10 +1,12 @@
 <template>
-    <div class="apple">
-      <h2>{{ name }}</h2>  
-      <p>{{ message }}</p>
-      <p id="red">You have clicked me {{ clicks }} times.</p>
+    <div v-on:click="countClicks">
+        <div class="apple">
+            <h2>{{ name }}</h2>  
+            <p>{{ message }}</p>
+            <p id="red">You have clicked me {{ clicks }} times.</p>
+        </div>
     </div>
-  </template>
+</template>
   
   <script>
   export default {
