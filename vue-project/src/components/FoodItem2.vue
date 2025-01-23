@@ -1,5 +1,5 @@
 <template>
-    <div v-on:click="countClicks">
+    <div class="mango">
       <h2>{{ name }}</h2>  
       <p>{{ message }}</p>
       <p id="red">You have clicked me {{ clicks }} times.</p>
@@ -24,7 +24,7 @@
   </script>
   
   <style>
-    #app > div {
+    .mango {
           border: dashed black 1px;
           display: inline-block;
           margin: 10px;
