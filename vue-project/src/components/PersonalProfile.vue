@@ -173,6 +173,67 @@
   </template>
 
 
+<script>
+
+// JavaScript for Modal Image Viewing
+document.addEventListener("DOMContentLoaded", function () {
+  // Get all clickable images and modal elements
+  const images = document.querySelectorAll("img.clickable");
+  const modal = document.querySelector(".modal");
+  const modalContent = document.querySelector(".modal-content");
+  const captionText = document.getElementById("image-caption");
+  const closeBtn = document.querySelector(".close");
+
+  // Function to open the modal and display the clicked image
+  images.forEach((img) => {
+    img.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalContent.src = this.src; // Set modal image to clicked image
+      captionText.textContent = this.alt || "No description available."; // Set caption
+    });
+  });
+
+  // Close modal when the close button is clicked
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close modal when clicking outside the image
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+});
+
+// JavaScript for Smooth Scrolling
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (event) {
+    event.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 50, // Adjust for fixed navbar
+        behavior: "smooth",
+      });
+    }
+  });
+});
+
+// JavaScript for Responsive Sidebar Toggle (Optional)
+const sidebarToggle = document.getElementById("myNavbar");
+if (sidebarToggle) {
+  document.querySelector(".w3-top").addEventListener("click", function () {
+    sidebarToggle.classList.toggle("w3-show");
+  });
+}
+
+
+</script>
+
+
 <style>
 
 .gallery-container {
