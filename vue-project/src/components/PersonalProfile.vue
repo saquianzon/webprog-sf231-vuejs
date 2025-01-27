@@ -175,30 +175,358 @@
 
 <script>
 
-// JavaScript for Modal Image Viewing
-document.addEventListener("DOMContentLoaded", function () {
-  // Get all clickable images and modal elements
-  const images = document.querySelectorAll("img.clickable");
-  const modal = document.querySelector(".modal");
-  const modalContent = document.querySelector(".modal-content");
-  const captionText = document.getElementById("image-caption");
-  const closeBtn = document.querySelector(".close");
+// Goals introduction data
+const goalsIntro = {
+  heading: "Goals in Life/Dreams",
+  paragraph1:
+    "An international volunteer and one of Jehovah's Witnesses, sharing Bible-based advice and God's promises for a future free of suffering, sickness, and even death.",
+  paragraph2:
+    "My love for God, Jehovah, and for people motivates me to spread this hope alongside fellow volunteers from over 240 lands.",
+};
 
-  // Function to open the modal and display the clicked image
-  images.forEach((img) => {
-    img.addEventListener("click", function () {
+// Preaching gallery data
+const preachingGallery = [
+  {
+    src: "https://cms-imgp.jw-cdn.org/img/p/2019361/univ/art/2019361_univ_cnt_2_xl.jpg",
+    alt: "Preaching the Good News",
+    description: "Sharing Good News From the Bible",
+  },
+  {
+    src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/animations.gif?raw=true",
+    alt: "Animation demos",
+    description: "Aspiring 2D professional artist/animator",
+  },
+];
+
+// Function to render goals introduction
+function renderGoalsIntro(containerId, intro) {
+  const container = document.getElementById(containerId);
+
+  if (!container) return console.error(`Container with ID ${containerId} not found.`);
+
+  container.innerHTML = `
+    <h2 class="w3-padding-16 w3-center w3-text-light-grey">${intro.heading}</h2>
+    <hr style="width:200px" class="center-line">
+    <p class="w3-center">${intro.paragraph1}</p>
+    <p class="w3-center">${intro.paragraph2}</p>
+  `;
+}
+
+// Function to render a gallery
+function renderGallery(containerId, galleryItems) {
+  const container = document.getElementById(containerId);
+
+  if (!container) return console.error(`Container with ID ${containerId} not found.`);
+
+  container.className = "preaching-jw"; // Apply the class for the flex layout
+  container.innerHTML = ""; // Clear existing content
+
+  galleryItems.forEach((item) => {
+    const galleryDiv = document.createElement("div");
+    galleryDiv.className = "preaching";
+
+    const img = document.createElement("img");
+    img.src = item.src;
+    img.alt = item.alt;
+    img.style.width = "100%";
+    img.style.height = "auto";
+    img.className = "clickable"; // Add the clickable class for modal functionality
+
+    const desc = document.createElement("div");
+    desc.className = "desc";
+    desc.textContent = item.description;
+
+    galleryDiv.appendChild(img);
+    galleryDiv.appendChild(desc);
+
+    container.appendChild(galleryDiv);
+  });
+
+  // Initialize modal functionality for the images
+  initializeModal();
+}
+
+// Function to initialize modal functionality
+function initializeModal() {
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const modalCaption = document.getElementById("image-caption");
+  const closeModal = document.getElementById("close-modal");
+
+  const images = document.querySelectorAll(".clickable");
+
+  images.forEach((image) => {
+    image.addEventListener("click", function () {
       modal.style.display = "block";
-      modalContent.src = this.src; // Set modal image to clicked image
-      captionText.textContent = this.alt || "No description available."; // Set caption
+      modalImage.src = this.src;
+      modalCaption.textContent = this.alt;
     });
   });
 
-  // Close modal when the close button is clicked
-  closeBtn.addEventListener("click", function () {
+  closeModal.addEventListener("click", function () {
     modal.style.display = "none";
   });
 
-  // Close modal when clicking outside the image
+  modal.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+}
+
+// Render goals introduction and galleries
+renderGoalsIntro("goals-intro", goalsIntro);
+renderGallery("preaching-gallery", preachingGallery);
+
+// Render gallery function
+// Render gallery function
+function renderGallery(containerId, galleryItems) {
+  const container = document.getElementById(containerId);
+
+  if (!container) return console.error(`Container with ID ${containerId} not found.`);
+
+  container.innerHTML = ""; // Clear existing content
+
+  galleryItems.forEach((item) => {
+    const galleryDiv = document.createElement("div");
+    galleryDiv.className = "gallery";
+
+    const img = document.createElement("img");
+    img.src = item.src;
+    img.alt = item.alt;
+    img.style.width = "320px";
+    img.style.height = "280px";
+    img.dataset.link = item.link;
+    img.dataset.description = item.description;
+
+    // Add CSS style for hover pointer
+    img.style.cursor = "pointer";
+
+    // Add click event to open the modal
+    img.addEventListener("click", () => openModal(img));
+
+    const desc = document.createElement("div");
+    desc.className = "desc";
+    desc.innerText = item.description;
+
+    galleryDiv.appendChild(img);
+    galleryDiv.appendChild(desc);
+    container.appendChild(galleryDiv);
+  });
+}
+
+// Modal functionality
+const modal = document.getElementById("image-modal");
+const modalImage = document.getElementById("modal-image");
+const modalCaption = document.getElementById("image-caption");
+const closeModal = document.getElementById("close-modal");
+
+// Function to open the modal
+function openModal(imageElement) {
+  modal.style.display = "block";
+  modalImage.src = imageElement.dataset.link || imageElement.src;
+  modalCaption.textContent = imageElement.dataset.description || "";
+}
+
+// Close modal on click
+closeModal.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+// Close modal on outside click
+modal.addEventListener("click", (event) => {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+});
+
+
+// Sample gallery data
+const hobbiesGallery = [
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true",
+            alt: "Digital Drawing",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/digital%20drawing.png?raw=true",
+            description: "Digital Drawing",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true",
+            alt: "Reading Novels",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/gahoole.jpg?raw=true",
+            description: "Reading Novels",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true",
+            alt: "Video Games",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/doors%20figure.png?raw=true",
+            description: "Video Games",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true",
+            alt: "Cats",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/cat.png?raw=true",
+            description: "Cats",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true",
+            alt: "Dinosaurs",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/dinosaurs.png?raw=true",
+            description: "Dinosaurs",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true",
+            alt: "Nature",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/nature.png?raw=true",
+            description: "Nature",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true",
+            alt: "Watching Movies/Shows",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/godzilla.jpg?raw=true",
+            description: "Watching Sci-Fi Movies/Shows",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true",
+            alt: "Playing/Listening to Music",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/ukulele.png?raw=true",
+            description: "Playing/Listening to Music",
+          },
+  // Add your hobbies gallery items here
+];
+
+const artGallery = [
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true",
+            alt: "Cat and B12",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Stray.png?raw=true",
+            description: "Stray Fanart",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true",
+            alt: "A Quiet Place Fanart",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Quiet%20Place%20fanart%20.png?raw=true",
+            description: "A Quiet Place Fanart",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true",
+            alt: "BB8 & D-0",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/BB-8%20and%20D-0%20-%20Art%20Activity.png?raw=true",
+            description: "BB8 & D-0",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true",
+            alt: "The Eagle and Turtle",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/The%20Eagle%20and%20the%20Turtle.png?raw=true",
+            description: "The Eagle and Turtle",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true",
+            alt: "Blue & Beta from Jurassic World",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/JWD%20Blue%20&%20Beta.png?raw=true",
+            description: "Blue & Beta from Jurassic World",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true",
+            alt: "19th Anniversary Gift for Parents",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/anniversary%20gift.png?raw=true",
+            description: "19th Anniversary Gift for Parents",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true",
+            alt: "Hollow Knight Pure Vessel Fanart",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Pure%20Vessel.png?raw=true",
+            description: "Hollow Knight Pure Vessel Fanart",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true",
+            alt: "Hollow Knight Vale OC",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/HK%20OC%20-%20Vale.png?raw=true",
+            description: "Hollow Knight Vale OC",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true",
+            alt: "Hollow Knight The Knight Fanart",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Little%20Ghost.png?raw=true",
+            description: "Hollow Knight The Knight Fanart",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true",
+            alt: "Hollow Knight Hornet Fanart",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Hornet.jpg?raw=true",
+            description: "Hollow Knight Hornet Fanart",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true",
+            alt: "Cat Sona OC",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Silver%20.png?raw=true",
+            description: "Cat Sona OC",
+          },
+          {
+            src: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Light%20of%20Hope%20and%20Peace%20-%20Art%20Appreciation%20Final%20Project.png?raw=true",
+            alt: "ARTAPPRE Final Project",
+            link: "https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/A%20Light%20of%20Hope%20and%20Peace%20-%20Art%20Appreciation%20Final%20Project.png?raw=true",
+            description: "ARTAPPRE Final Project",
+          },
+];
+
+// Personal goals gallery data
+const personalGoalsGallery = [
+  {
+    src: "https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg",
+    alt: "Cat and Piano",
+    link: "https://i.pinimg.com/564x/59/59/9c/59599c11c023caa2612a987c96e3a326.jpg",
+    description: "Learn to Play Piano",
+  },
+  {
+    src: "https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png",
+    alt: "Travel to Japan",
+    link: "https://soranews24.com/wp-content/uploads/sites/3/2019/10/gs-2.png",
+    description:
+      "Travel to Japan for their Cherry Blossoms & Godzilla attractions",
+    width: "400px",
+    height: "280px",
+  },
+  {
+    src: "https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif",
+    alt: "catnapped",
+    link: "https://media.tenor.com/sh_5zpuzWs4AAAAM/cat-pull-cat-snatch.gif",
+    description: "Have a cat (TOP PRIORITY)",
+  },
+];
+
+// Render galleries
+renderGallery("hobbies-gallery", hobbiesGallery);
+renderGallery("art-gallery", artGallery);
+renderGallery("personal-goals-gallery", personalGoalsGallery);
+
+// JavaScript to handle clickable images and the modal
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const modalCaption = document.getElementById("image-caption");
+  const closeModal = document.getElementById("close-modal");
+
+  // Get all images that should trigger the modal
+  const images = document.querySelectorAll(".image-container img");
+
+  images.forEach((image) => {
+    // Add 'clickable' class to all images
+    image.classList.add("clickable");
+
+    // Add event listener to open the modal on click
+    image.addEventListener("click", function () {
+      modal.style.display = "block";
+      modalImage.src = this.src;
+      modalCaption.textContent = this.alt;
+    });
+  });
+
+  // Close the modal when clicking the close button
+  closeModal.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  // Close the modal when clicking outside the modal image
   modal.addEventListener("click", function (event) {
     if (event.target === modal) {
       modal.style.display = "none";
@@ -206,30 +534,132 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// JavaScript for Smooth Scrolling
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", function (event) {
-    event.preventDefault();
-    const targetId = this.getAttribute("href").substring(1);
-    const targetElement = document.getElementById(targetId);
+document.addEventListener("DOMContentLoaded", function () {
+  const app = {
+    started: false,
+    currentQuestionIndex: 0,
+    selectedAnswer: null,
+    showThankYou: false,
+    feedback: [],
+    questions: [
+      {
+        question: "How would you rate the design of this website?",
+        options: ["Excellent", "Good", "Average", "Poor"],
+      },
+      {
+        question: "Was the website easy to navigate?",
+        options: ["Very Easy", "Somewhat Easy", "Neutral", "Difficult"],
+      },
+      {
+        question: "Would you recommend this website to others?",
+        options: ["Definitely", "Probably", "Not Sure", "No"],
+      },
+      {
+        question: "Any suggestions for improvement?",
+        options: ["Better Design", "More Features", "More Interactions", "None"],
+      },
+    ],
 
-    if (targetElement) {
-      window.scrollTo({
-        top: targetElement.offsetTop - 50, // Adjust for fixed navbar
-        behavior: "smooth",
+    startSurvey() {
+      this.started = true;
+      this.updateScreen();
+    },
+
+    selectAnswer(index) {
+      this.selectedAnswer = index;
+      document.getElementById("nextButton").style.display = "inline-block";
+      const options = document.querySelectorAll("#optionsList li");
+      options.forEach((option, i) => {
+        option.classList.toggle("selected", i === index);
       });
+    },
+
+    nextQuestion() {
+      this.feedback.push({
+        question: this.questions[this.currentQuestionIndex].question,
+        answer: this.questions[this.currentQuestionIndex].options[this.selectedAnswer],
+      });
+      this.selectedAnswer = null;
+      document.getElementById("nextButton").style.display = "none";
+
+      if (this.currentQuestionIndex < this.questions.length - 1) {
+        this.currentQuestionIndex++;
+      } else {
+        this.showThankYou = true;
+        this.started = false;
+      }
+      this.updateScreen();
+    },
+
+    restartSurvey() {
+      this.currentQuestionIndex = 0;
+      this.feedback = [];
+      this.selectedAnswer = null;
+      this.showThankYou = false;
+      this.started = false;
+      this.updateScreen();
+    },
+
+    updateScreen() {
+      const startScreen = document.getElementById("startScreen");
+      const questionScreen = document.getElementById("questionScreen");
+      const thankYouScreen = document.getElementById("thankYouScreen");
+      const questionText = document.getElementById("questionText");
+      const optionsList = document.getElementById("optionsList");
+
+      startScreen.style.display = this.started ? "none" : this.showThankYou ? "none" : "block";
+      questionScreen.style.display = this.started ? "block" : "none";
+      thankYouScreen.style.display = this.showThankYou ? "block" : "none";
+
+      if (this.started) {
+        const currentQuestion = this.questions[this.currentQuestionIndex];
+        questionText.textContent = currentQuestion.question;
+        optionsList.innerHTML = "";
+        currentQuestion.options.forEach((option, index) => {
+          const li = document.createElement("li");
+          li.textContent = option;
+          li.addEventListener("click", () => this.selectAnswer(index));
+          optionsList.appendChild(li);
+        });
+      }
+    },
+  };
+
+  // Event listeners for survey buttons
+  document.getElementById("startButton").addEventListener("click", () => app.startSurvey());
+  document.getElementById("nextButton").addEventListener("click", () => app.nextQuestion());
+  document.getElementById("restartButton").addEventListener("click", () => app.restartSurvey());
+
+  // Additional feedback submission logic
+  const commentForm = document.getElementById("commentForm");
+  const commentsList = document.getElementById("commentsList");
+
+  commentForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const userName = document.getElementById("userName").value.trim();
+    const feedbackText = document.getElementById("additionalFeedback").value.trim();
+
+    if (!userName) {
+      alert("Please enter your name before submitting.");
+      return;
     }
+
+    if (!feedbackText) {
+      alert("Please enter your feedback before submitting.");
+      return;
+    }
+
+    // Add the comment to the list
+    const commentItem = document.createElement("li");
+    commentItem.innerHTML = `<strong>${userName}:</strong> ${feedbackText}`;
+    commentsList.appendChild(commentItem);
+
+    // Clear the form fields
+    document.getElementById("userName").value = "";
+    document.getElementById("additionalFeedback").value = "";
   });
 });
-
-// JavaScript for Responsive Sidebar Toggle (Optional)
-const sidebarToggle = document.getElementById("myNavbar");
-if (sidebarToggle) {
-  document.querySelector(".w3-top").addEventListener("click", function () {
-    sidebarToggle.classList.toggle("w3-show");
-  });
-}
-
 
 </script>
 
