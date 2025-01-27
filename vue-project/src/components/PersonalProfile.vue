@@ -1,169 +1,305 @@
 <template>
       
     <body class="w3-black">
-      <!-- Sidebar -->
-      <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id="sidebar">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-home w3-xxlarge"></i>
-          <p>HOME</p>
-        </a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-user w3-xxlarge"></i>
-          <p>ABOUT</p>
-        </a>
-        <a href="#it" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-wrench fa-3x"></i>
-          <p>IT SKILLS</p>
-        </a>
-        <a href="#goals" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-trophy fa-4x"></i>
-          <p>GOALS</p>
-        </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-camera-retro fa-3x"></i>
-          <p>HOBBIES</p>
-        </a>
-        <a href="#art" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-paint-brush fa-3x"></i>
-          <p>ARTWORKS</p>
-        </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-envelope w3-xxlarge"></i>
-          <p>CONTACT</p>
-        </a>
-      </nav>
-  
-      <!-- Navbar for Small Screens -->
-      <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar" style="background-color: #130302;"> 
+        <!-- Icon Bar (Sidebar - hidden on small screens) -->
+        <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id="sidebar">
+            <a href="#" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-home w3-xxlarge"></i>
+                <p>HOME</p>
+            </a>
+            <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-user w3-xxlarge"></i>
+                <p>ABOUT</p>
+            </a>
+            <a href="#it" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-wrench fa-3x"></i>
+                <p>IT SKILLS</p>
+            </a>
+            <a href="#goals" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-trophy fa-4x"></i>
+                <p>GOALS</p>
+            </a>
+            <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-camera-retro fa-3x"></i>
+                <p>HOBBIES</p>
+            </a>
+            <a href="#art" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-paint-brush fa-3x"></i>
+                <p>ARTWORKS</p>
+            </a>
+            <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
+                <i class="fa fa-envelope w3-xxlarge"></i>
+                <p>CONTACT</p>
+            </a>
+        </nav>
+        
+    <!-- Navbar on small screens (Hidden on medium and large screens) -->
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar" style="background-color: #130302;"> 
         <div class="w3-bar w3-hover-opacity-off w3-center w3-small">
-          <a href="#" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">HOME</a>
-          <a href="#about" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">ABOUT</a>
-          <a href="#art" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">GALLERY</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">CONTACT</a>
+            <a href="#" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">ABOUT</a>
+            <a href="#art" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">GALLERY</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-text-white" style="width:25% !important">CONTACT</a>
         </div>
-      </div>
-  
-      <!-- Main Content -->
-      <div class="w3-padding-large" id="main">
-        <!-- Header -->
+    </div>
+    
+    <!-- Page Content -->
+     <div class="w3-padding-large" id="main">
+        <!-- Header/Home -->
         <header class="w3-container w3-padding-32 w3-center" id="home" style="background-color: #22121b;">
-          <h1 class="w3-jumbo" style="font-size: 80px;">
-            <span class="w3-hide-small">Hej! I'm</span> Shandrae Quianzon
-          </h1>
-          <img id="img1" src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/yearbook-cropped.jpg?raw=true" alt="Profile Pic" width="300" height="300">
-          <p>Welcome to my first website!</p>
-          <p>Oh and in case I don't see ya, good afternoon, good evening, and good night! - Truman Burbank, The Truman Show</p>
+            <h1 class="w3-jumbo" style="font-size: 80px;">
+                <span class="w3-hide-small">Hej! I'm</span> Shandrae Quianzon
+            </h1>
+            <img id="img1" src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/yearbook-cropped.jpg?raw=true" alt="Profile Pic" width="300" height="300">
+            <p>Welcome to my first website!</p>
+            <p>Oh and in case I don't see ya, good afternoon, good evening, and good night! - Truman Burbank, The Truman Show</p>
         </header>
-  
+        
         <!-- About Section -->
         <div class="w3-content w3-center w3-text-white w3-padding-64" id="about">
-          <h2 class="w3-text-light-grey">About Me</h2>
-          <hr style="width:200px" class="center-line">
-          <p>I'm a Dinophile and Ailurophile! (Someone who loves dinosaurs and cats)</p>
-          <p>As someone who enjoys quiet environments, I love seeing the wonders of nature and would spend time learning about them during my free time by reading or showing my appreciation of them through drawing.</p>
+            <h2 class="w3-text-light-grey">About Me</h2>
+            <hr style="width:200px" class="center-line">
+            <p>I'm a Dinophile and Ailurophile! (Someone who loves dinosaurs and cats)</p>
+            <p>As someone who enjoys quiet environments, I love seeing the wonders of nature and would spend time learning about them during my free time by reading or showing my appreciation of them through drawing.</p>
+
   
-          <!-- Education Section -->
-          <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
-          <div class="flex-container">
-            <!-- Schools -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color w3-xlarge w3-padding-32 w3-text-light-grey">Schools</li>
-                <li class="w3-padding-16">Victory Elijah Christian College (2018-2021)</li>
-                <li class="w3-padding-16">Ignacio Villamor Senior High School (2021-2023)</li>
-                <li class="w3-padding-16">Asia Pacific College (2023-2027)</li>
-              </ul>
+            <!-- Grid for pricing tables -->
+            <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
+            <div class="flex-container">
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color w3-xlarge w3-padding-32 w3-text-light-grey">Schools</li>
+                        <li class="w3-padding-16">Victory Elijah Christian College (2018-2021)</li>
+                        <li class="w3-padding-16">Ignacio Villamor Senior High School (2021-2023)</li>
+                        <li class="w3-padding-16">Asia Pacific College (2023-2027)</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color2 w3-xlarge w3-padding-32 w3-text-light-grey">Achievements</li>
+                        <li class="w3-padding-16">Elementary: 1st Place Mask-Making Contestant</li>
+                        <li class="w3-padding-16">Senior High School: With High Honors (Grade 11 & 12)</li>
+                        <li class="w3-padding-16">College: Honor Student (1st Year)</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color3 w3-xlarge w3-padding-32 w3-text-light-grey">Course</li>
+                        <li class="w3-padding-16">Technical-Vocational Livelihood (TVL) Information and Communications Technology (ICT)</li>
+                        <li class="w3-padding-16">Bachelor of Computer Science with Specialization in Cybersecurity and Forensics</li>
+                    </ul>
+                </div>
             </div>
-            <!-- Achievements -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color2 w3-xlarge w3-padding-32 w3-text-light-grey">Achievements</li>
-                <li class="w3-padding-16">Elementary: 1st Place Mask-Making Contestant</li>
-                <li class="w3-padding-16">Senior High School: With High Honors (Grade 11 & 12)</li>
-                <li class="w3-padding-16">College: Honor Student (1st Year)</li>
-              </ul>
-            </div>
-            <!-- Course -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color3 w3-xlarge w3-padding-32 w3-text-light-grey">Course</li>
-                <li class="w3-padding-16">Technical-Vocational Livelihood (TVL) Information and Communications Technology (ICT)</li>
-                <li class="w3-padding-16">Bachelor of Computer Science with Specialization in Cybersecurity and Forensics</li>
-              </ul>
-            </div>
-          </div>
+            
+            <!-- End Grid/Pricing tables -->
         </div>
-  
-        <!-- IT Skills Section -->
+        
+        <!--IT Experience-->
         <div class="w3-content w3-center w3-text-white" id="it">
-          <h2 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h2>
-          <hr style="width:200px" class="center-line">
-          <p class="w3-wide">Network Configuration</p>
-          <div class="w3-white">
-            <div class="custom-color7" style="height:28px;width:66%"></div>
-          </div>
-          <p class="w3-wide">Coding</p>
-          <div class="w3-white">
-            <div class="custom-color7" style="height:28px;width:56%"></div>
-          </div>
-          <p class="w3-wide">Digital Art</p>
-          <div class="w3-white">
-            <div class="custom-color7" style="height:28px;width:94%"></div>
-          </div>
-  
-          <!-- IT Skills Grid -->
-          <div class="flex-container">
-            <!-- Software -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color4 w3-xlarge w3-padding-32 w3-text-light-grey">Software</li>
-                <li class="w3-padding-16">Windows 7 and 10 Operating System Installation</li>
-                <li class="w3-padding-16">Windows Server 2012 r2 Configuration</li>
-                <li class="w3-padding-16">Ubuntu Linux Installation</li>
-              </ul>
+            <h2 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h2>
+            <hr style="width:200px" class="center-line">
+            <p class="w3-wide">Network Configuration</p>
+            <div class="w3-white">
+                <div class="custom-color7" style="height:28px;width:66%"></div>
             </div>
-            <!-- Hardware -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color5 w3-xlarge w3-padding-32 w3-text-light-grey">Hardware</li>
-                <li class="w3-padding-16">Setting up Computer Networks & Servers</li>
-                <li class="w3-padding-16">Assembling/Disassembling Computer Systems</li>
-                <li class="w3-padding-16">Patch Panel Networking</li>
-              </ul>
+            <p class="w3-wide">Coding</p>
+            <div class="w3-white">
+                <div class="custom-color7" style="height:28px;width:56%"></div>
             </div>
-            <!-- Applications -->
-            <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color6 w3-xlarge w3-padding-32 w3-text-light-grey">Applications</li>
-                <li class="w3-padding-16">Basic Python, Java, HTML, MySQL</li>
-                <li class="w3-padding-16">Microsoft 365, Visual Studio Code, Oracle VirtualBox</li>
-                <li class="w3-padding-16">Figma, Canva, Ibis Paint X, Medibang, FireAlpaca</li>
-              </ul>
+            <p class="w3-wide">Digital Art</p>
+            <div class="w3-white">
+                <div class="custom-color7" style="height:28px;width:94%"></div>
+            </div><br><br>
+            
+            <div class="flex-container">
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color4 w3-xlarge w3-padding-32 w3-text-light-grey">Software</li>
+                        <li class="w3-padding-16">Windows 7 and 10 Operating System Installation</li>
+                        <li class="w3-padding-16">Windows Server 2012 r2 Configuration</li>
+                        <li class="w3-padding-16">Ubuntu Linux Installation</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color5 w3-xlarge w3-padding-32 w3-text-light-grey">Hardware</li>
+                        <li class="w3-padding-16">Setting up Computer Networks & Servers</li>
+                        <li class="w3-padding-16">Assembling/Disassembling Computer Systems</li>
+                        <li class="w3-padding-16">Patch Panel Networking</li>
+                    </ul>
+                </div>
+                
+                <div class="flex-box">
+                    <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
+                        <li class="custom-color6 w3-xlarge w3-padding-32 w3-text-light-grey">Applications</li>
+                        <li class="w3-padding-16">Basic Python, Java, HTML, MySQL</li>
+                        <li class="w3-padding-16">Microsoft 365, Visual Studio Code, Oracle VirtualBox</li>
+                        <li class="w3-padding-16">Figma, Canva, Ibis Paint X, Medibang, FireAlpaca</li>
+                    </ul>
+                </div>
             </div>
-          </div>
         </div>
-  
-        <!-- Add additional sections here with similar organization -->
-      </div>
-  
-      <!-- Footer -->
-      <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        <p class="w3-medium">Thank you for visiting my first website. If you see this message, here's a free cookie 🍪 </p>
-      </footer>
-    </body>
-  </template>
+        
+        <br>
+        <!--Goals Vue (changed to pass HTML validator as vue is not recognized)-->
+        <div id="main-content">
+            <div class="w3-content w3-center w3-text-white" id="goals">
+                <div id="goals-intro" class="w3-container w3-padding-32"></div>
+            </div>
+            
+            <!-- Preaching Work Section -->
+             <section>
+                <h3 class="w3-padding-16 w3-center w3-text-light-grey">Preaching and Creative Work</h3>
+                <div id="preaching-gallery" class="gallery-container"></div>
+            </section>
+            
+            <!-- Personal Goals Section -->
+             <section>
+                <h3 class="w3-padding-16 w3-center w3-text-light-grey">Personal Goals</h3>
+                <div id="personal-goals-gallery" class="gallery-container"></div>
+            </section>
+            
+            <!-- Gallery Vue (changed to pass HTML validator as vue is not recognized)-->
+            <!-- Hobbies and Interests Section -->
+            <section>
+                <div class="w3-content w3-center w3-text-white" id="photos">
+                    <h2 class="w3-padding-16 w3-center w3-text-light-grey">Hobbies and Interests</h2>
+                </div>
+                <hr style="width:200px" class="center-line">
+                <p class="w3-center w3-large">Try clicking on the images!</p>
+                <br>
+                <div id="hobbies-gallery" class="gallery-container"></div>
+            </section>
+            
+            <!-- Gallery Vue (changed to pass HTML validator as vue is not recognized)-->
+            <!-- Art Gallery Section -->
+            <section>
+                <div class="w3-content w3-center w3-text-white" id="art">
+                    <h2 class="w3-padding-16 w3-center w3-text-light-grey">Art Gallery</h2>
+                </div>
+                <hr style="width:200px" class="center-line">
+                <p class="w3-center w3-large">Try clicking on the images!</p>
+                <p class="w3-center w3-medium">Please don't steal/repost my works .ᐟ(つ╥﹏╥)つ</p>
+                <div id="art-gallery" class="gallery-container"></div>
+            </section>
+        </div>
+        
+        <!-- Modal Vue for Full-Size Images (changed to pass HTML validator as vue is not recognized) -->
+        <div id="image-modal" class="modal" role="dialog" aria-labelledby="image-caption" aria-hidden="true">
+            <button id="close-modal" class="close" aria-label="Close">&times;</button>
+            <img class="modal-content" id="modal-image" src="https://via.placeholder.com/300" alt="Full-size view of selected image">
+            <div id="image-caption" role="note"></div>
+        </div>
+        
+        <!-- Survey Vue (changed to pass HTML validator as vue is not recognized) -->
+        <div id="surveyApp">
+            <h2>Website Feedback Survey</h2>
+            <!-- Start Survey Screen -->
+            <div id="startScreen">
+                <p>Congrats for making it this far, visitor! Your feedback helps the developer of this website improve—click below to start the survey!</p>
+                <button id="startButton">Start Survey</button>
+            </div>
+            
+            <!-- Survey Questions -->
+            <div id="questionScreen" style="display: none;">
+                <p id="questionText"></p>
+                <ul id="optionsList"></ul>
+                <button id="nextButton" style="display: none;">Next</button>
+            </div>
+            
+            <!-- Thank-You Screen -->
+            <div id="thankYouScreen" style="display: none;">
+                <p class="thank-you">Thank you for your feedback!</p>
+                <button id="restartButton">Take Survey Again</button>
+                
+                <!-- Comment Form -->
+                <form id="commentForm">
+                    <label for="userName">Your Name:</label>
+                    <input type="text" id="userName" placeholder="Enter your name">
+                    
+                    <label for="additionalFeedback">Additional Comments:</label>
+                    <textarea id="additionalFeedback" rows="4" placeholder="Write your feedback here..."></textarea>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+                
+                <!-- Display Submitted Comments -->
+                <div id="submittedComments">
+                    <h3>Submitted Comments:</h3>
+                    <ul id="commentsList"></ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contact Section -->
+        <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+            <h2 class="w3-text-light-grey">Contact Me</h2>
+            <hr style="width:200px" class="w3-opacity">
+            <div class="w3-section">
+                
+                <p>
+                    <b>
+                        <i class="fa fa-facebook-official fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                        <a class="five" href="https://www.facebook.com/shandrae.quianzon" target="_blank">My Facebook Page
+                        </a>
+                    </b>
+                </p>
+                
+                <p>
+                    <b>
+                        <i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                        <a class="five" href="https://www.instagram.com/quiassont/" target="_blank">Find me on Instagram
+                        </a>
+                    </b>
+                </p>
+                
+                <p>
+                    <b>
+                        <i class="fa fa-linkedin fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>
+                        <a class="five" href="https://www.linkedin.com/in/shandrae-lois-quianzon-765679288/" target="_blank">Take a look at my LinkedIn Profile
+                        </a>
+                    </b>
+                </p>
+            </div>
+            
+            <!-- End Contact Section -->
+        </div>
+            
+            <!-- Footer -->
+            <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+                <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                <i class="fa fa-instagram w3-hover-opacity"></i>
+                <i class="fa fa-snapchat w3-hover-opacity"></i>
+                <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                <i class="fa fa-twitter w3-hover-opacity"></i>
+                <i class="fa fa-linkedin w3-hover-opacity"></i>
+                <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+                <p class="w3-medium">Thank you for visiting my first website. If you see this message, here's a free cookie 🍪 </p>
+            <!-- End footer -->
+            </footer>
+            
+            <!-- END PAGE CONTENT -->
+        </div>
+        
+        <!-- Provided JavaScripts -->
+        <script src="https://unpkg.com/vue@3" defer></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        
+        <!-- Revised Vue codes to pass HTML & CSS Validators -->
+        <script src="js/main.js" defer></script>
+        <script src="js/goals.js" defer></script>
+        <script src="js/survey.js" defer></script>
+        <script src="js/modal.js" defer></script>
+        
+        <!-- No suggestions the website is great! -->
+        </body>
+</template>
 
 
 <script></script>
  
-
 
 <style>
 
