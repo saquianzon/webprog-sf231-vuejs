@@ -1,17 +1,5 @@
 <template>
-    <head>
-      <title>My Personal Website</title>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="css/styles.css?version=0.3">
-      <link rel="stylesheet" href="css/image.css?version=0.3">
-      <link rel="stylesheet" href="css/survey.css?version=0.2">
-      <link rel="stylesheet" href="css/modal.css?version=0.4">
-    </head>
-  
+      
     <body class="w3-black">
       <!-- Sidebar -->
       <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id="sidebar">
@@ -174,6 +162,7 @@
 
 
 <script></script>
+ 
 
 
 <style>
