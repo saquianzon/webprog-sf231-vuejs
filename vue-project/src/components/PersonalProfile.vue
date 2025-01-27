@@ -174,4 +174,500 @@
 
 <script></script>
 
-<style></style>
+<style>
+
+.gallery-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Reduces space between images */
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+}
+
+div.gallery img {
+  width: 320px; /* Fixed width */
+  height: 280px; /* Fixed height */
+  object-fit: cover; /* Crops and maintains proportions */
+  display: block;
+  margin: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+div.gallery {
+  flex: 0 1 auto; /* Keeps dimensions flexible */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
+}
+
+ 
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.preaching-jw {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Spacing between items */
+  flex-wrap: wrap; /* Allows wrapping to the next line if needed */
+  margin-top: 20px; /* Space above the gallery */
+  margin-bottom: 20px; /* Space below the gallery */
+}
+
+
+div.preaching {
+  flex: 1 1 calc(50% - 20px); /* Each item takes 50% of the container width minus the gap */
+  max-width: 600px; /* Limits the maximum width of each item */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 15px; /* Spacing below each item */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+
+div.preaching img {
+  width: 100%; /* Responsive width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Crops and maintains proportions */
+  display: block; /* Ensures the image is treated as a block-level element */
+  margin: auto; /* Centers the image within the container */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow for visual appeal */
+}
+
+
+.preaching-jw {
+  display: flex;
+  flex-wrap: wrap; /* Allows items to wrap */
+  gap: 20px; /* Space between items */
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  margin: 0 auto; /* Ensures the container is centered */
+  max-width: 1200px; /* Optional: Limits the container's width */
+}
+
+
+div.preaching {
+  flex: 1 1 calc(50% - 20px); /* Each item takes up 50% width minus the gap */
+  max-width: 600px; /* Restricts the maximum width */
+  text-align: center; /* Centers text under the image */
+  box-sizing: border-box; /* Includes padding and border in the width calculation */
+}
+
+
+div.preaching img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 5px; /* Optional: Adds rounded corners */
+  object-fit: cover; /* Ensures the image fits well */
+}
+
+div.desc {
+  margin-top: 8px;
+  font-size: 14px;
+  text-align: center; /* Centers the description text */
+  color: #fff; /* Optional: Adjust the text color */
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+#image-caption {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.5s; /* Animation for modal appearance */
+}
+
+/* Center the modal image */
+.modal-content {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically center the image */
+  max-width: 90%; /* Limit the size */
+  max-height: 80%; /* Prevent overflow */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s; /* Zoom-in effect for image */
+}
+
+/* Close button styles */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(196, 159, 82);
+  background-color: rgba(34, 12, 12, 0.8);
+}
+
+.close:hover {
+  color: rgb(10, 12, 9);
+  background-color: rgba(248, 214, 162, 0.8);
+}
+
+
+/* Change cursor on hover for clickable images */
+img.clickable {
+  cursor: pointer;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: translateY(-50%) scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%) scale(1);
+    opacity: 1;
+  }
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif
+}
+
+.w3-row-padding img {
+  margin-bottom: 12px
+}
+
+.w3-sidebar {
+  width: 120px; background: #130302;
+}
+
+#main {
+  margin-left: 120px
+}
+
+@media only screen and (max-width: 600px) {
+  #main {margin-left: 0}
+}
+
+body {
+background-image: url("https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/artworks/Media.png?raw=true");
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+
+.w3-sidebar .w3-button:hover {
+  background-color: #daa749 !important;
+}
+
+.w3-bar .w3-button:hover {
+  background-color: #daa749 !important;
+}
+
+.center-line {
+  margin: 0 auto;
+}
+
+#img1 {
+  clip-path: circle(50%);
+  width: 200px; /* Fixed width */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the image fills the circle without stretching */
+  display: block; /* Prevents inline spacing issues */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+header h1 {
+  font-size: 40px;
+}
+
+.w3-hover-opacity:hover {
+  opacity: 1 !important; /* Ensures no opacity change */
+}
+
+
+.flex-container {
+  display: flex; /* Enables flexbox */
+  justify-content: space-between; /* Adjusts spacing between boxes */
+  align-items: flex-start; /* Aligns items to the top */
+  flex-wrap: wrap; /* Wraps items to the next line if needed */
+  gap: 20px; /* Adds spacing between boxes */
+}
+
+.flex-box {
+  flex: 1 1 calc(33.333% - 20px); /* Ensures equal width for three boxes and accounts for gaps */
+  box-sizing: border-box; /* Ensures padding doesn't affect box width */
+  min-width: 250px; /* Prevents boxes from shrinking too much */
+}
+
+.center-box {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: 20px; /* Spacing from the top */
+}
+
+.center-box ul {
+  width: 100%; /* Adjust the width for responsiveness */
+  max-width: 400px; /* Set a max width for the box */
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.custom-color {
+  background-color: #304670;
+}
+
+.custom-color2 {
+  background-color: #857036;
+}
+
+.custom-color3 {
+  background-color: #36856b;
+}
+
+.custom-color4 {
+  background-color: #303470;
+}
+
+.custom-color5 {
+  background-color: #7f3c81;
+}
+
+.custom-color6 {
+  background-color: #85364e;
+}
+
+.custom-color7 {
+  background-color: #437230;
+}
+
+a.five:link {color:#ffffff;text-decoration:none;}
+a.five:visited {color:#8dfdd8;text-decoration:none;}
+a.five:hover {text-decoration:underline;}
+
+
+.gallery-container {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Reduces space between images */
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+}
+
+div.gallery img {
+  width: 320px; /* Fixed width */
+  height: 280px; /* Fixed height */
+  object-fit: cover; /* Crops and maintains proportions */
+  display: block;
+  margin: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+div.gallery {
+  flex: 0 1 auto; /* Keeps dimensions flexible */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
+}
+
+ 
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.preaching-jw {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Centers items horizontally */
+  gap: 20px; /* Reduces space between images */
+  flex-wrap: wrap; /* Ensures images wrap to the next row if needed */
+  margin-top: 20px; /* Adjusts space above the gallery */
+  margin-bottom: 15px;
+}
+
+div.preaching {
+  flex: 0 1 auto; /* Keeps dimensions flexible */
+  text-align: center; /* Centers text under each image */
+  margin-bottom: 10px; /* Reduces spacing below the text */
+}
+
+div.preaching img {
+  width: 600px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  object-fit: cover; /* Crops and maintains proportions */
+  display: block;
+  margin: auto;
+  border-radius: 5px; /* Optional: Adds rounded corners */
+}
+
+.w3-text-light-grey {
+  font-weight: bold;
+}
+
+#surveyApp {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+#surveyApp ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#surveyApp li {
+  padding: 10px;
+  margin: 5px 0;
+  background: #3d213c;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#surveyApp li:hover {
+  background: #cf8f46;
+  transform: scale(1.02);
+}
+
+#surveyApp button {
+  padding: 10px 20px;
+  background: #406b2c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#surveyApp button:hover {
+  background: #5cbaf0;
+}
+
+#surveyApp .thank-you {
+  font-size: 18px;
+  color: #66e76a;
+}
+
+#surveyApp h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#commentForm {
+  margin-top: 20px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+#commentForm label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+#commentForm input,
+#commentForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background: #fff6e9;
+}
+
+#commentForm button {
+  width: 100%;
+  padding: 10px;
+  background: #3d213c;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+#commentForm button:hover {
+  background: #cf8f46;
+}
+
+#submittedComments {
+  max-width: 650px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+#submittedComments h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#commentsList li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #262a38;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+</style>
