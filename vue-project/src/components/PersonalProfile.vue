@@ -172,10 +172,6 @@
     </body>
   </template>
 
-<script src="vue-project/src/main.js" defer></script>
-<script src="vue-project/src/goals.js" defer></script>
-<script src="vue-project/src/survey.js" defer></script>
-<script src="vue-project/src/modal.js" defer></script>
 
 <style>
 
