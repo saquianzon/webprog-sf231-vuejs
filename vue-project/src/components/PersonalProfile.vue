@@ -288,15 +288,7 @@
 </template>
 
 
-<!-- Provided JavaScripts -->
-<script src="https://unpkg.com/vue@3" defer></script>
-<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
-<!-- Revised Vue codes to pass HTML & CSS Validators -->
-<script src="js/main2.js" defer></script>
-<script src="js/goals.js" defer></script>
-<script src="js/survey.js" defer></script>
-<script src="js/modal.js" defer></script>
+<script>
  
 
 <style>
