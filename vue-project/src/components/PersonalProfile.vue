@@ -15,35 +15,36 @@
     <body class="w3-black">
       <!-- Sidebar -->
       <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id="sidebar">
-        <a href="#" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-home w3-xxlarge"></i>
-          <p>HOME</p>
-        </a>
-        <a href="#about" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-user w3-xxlarge"></i>
-          <p>ABOUT</p>
-        </a>
-        <a href="#it" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-wrench fa-3x"></i>
-          <p>IT SKILLS</p>
-        </a>
-        <a href="#goals" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-trophy fa-4x"></i>
-          <p>GOALS</p>
-        </a>
-        <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-camera-retro fa-3x"></i>
-          <p>HOBBIES</p>
-        </a>
-        <a href="#art" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-paint-brush fa-3x"></i>
-          <p>ARTWORKS</p>
-        </a>
-        <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
-          <i class="fa fa-envelope w3-xxlarge"></i>
-          <p>CONTACT</p>
-        </a>
-      </nav>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-home w3-xxlarge"></i>
+      <p>HOME</p>
+    </a>
+    <a href="#about" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-user w3-xxlarge"></i>
+      <p>ABOUT</p>
+    </a>
+    <a href="#it" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-wrench fa-3x"></i>
+      <p>IT SKILLS</p>
+    </a>
+    <a href="#goals" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-trophy fa-4x"></i>
+      <p>GOALS</p>
+    </a>
+    <a href="#photos" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-camera-retro fa-3x"></i>
+      <p>HOBBIES</p>
+    </a>
+    <a href="#art" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-paint-brush fa-3x"></i>
+      <p>ARTWORKS</p>
+    </a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large">
+      <i class="fa fa-envelope w3-xxlarge"></i>
+      <p>CONTACT</p>
+    </a>
+  </nav>
+      
   
       <!-- Navbar for Small Screens -->
       <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar" style="background-color: #130302;"> 
@@ -58,29 +59,29 @@
       <!-- Main Content -->
       <div class="w3-padding-large" id="main">
         <!-- Header -->
-        <header class="w3-container w3-padding-32 w3-center" id="home" style="background-color: #22121b;">
+        <header class="w3-container w3-padding-32 w3-center" id="home" style="background-color: white;">
           <h1 class="w3-jumbo" style="font-size: 80px;">
             <span class="w3-hide-small">Hej! I'm</span> Shandrae Quianzon
           </h1>
-          <img id="img1" src="https://github.com/saquianzon/WEBPROG-SF231-Personal-Website/blob/feature/2_SLQ_customize_my_website/home/hobbies%20pics/yearbook-cropped.jpg?raw=true" alt="Profile Pic" width="300" height="300">
+          
           <p>Welcome to my first website!</p>
           <p>Oh and in case I don't see ya, good afternoon, good evening, and good night! - Truman Burbank, The Truman Show</p>
         </header>
   
         <!-- About Section -->
-        <div class="w3-content w3-center w3-text-white w3-padding-64" id="about">
-          <h2 class="w3-text-light-grey">About Me</h2>
+        <div class="w3-content w3-center w3-padding-64" id="about">
+          <h2 class="w3-text-black">About Me</h2>
           <hr style="width:200px" class="center-line">
           <p>I'm a Dinophile and Ailurophile! (Someone who loves dinosaurs and cats)</p>
           <p>As someone who enjoys quiet environments, I love seeing the wonders of nature and would spend time learning about them during my free time by reading or showing my appreciation of them through drawing.</p>
   
           <!-- Education Section -->
-          <h3 class="w3-padding-16 w3-text-light-grey">Education</h3>
+          <h3 class="w3-padding-16 w3-text-black">Education</h3>
           <div class="flex-container">
             <!-- Schools -->
             <div class="flex-box">
-              <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color w3-xlarge w3-padding-32 w3-text-light-grey">Schools</li>
+              <ul class="w3-ul w3-center w3-hover-opacity:hover">
+                <li class="custom-color w3-xlarge w3-padding-32 w3-text-black">Schools</li>
                 <li class="w3-padding-16">Victory Elijah Christian College (2018-2021)</li>
                 <li class="w3-padding-16">Ignacio Villamor Senior High School (2021-2023)</li>
                 <li class="w3-padding-16">Asia Pacific College (2023-2027)</li>
@@ -89,7 +90,7 @@
             <!-- Achievements -->
             <div class="flex-box">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color2 w3-xlarge w3-padding-32 w3-text-light-grey">Achievements</li>
+                <li class="custom-color2 w3-xlarge w3-padding-32 w3-text-black">Achievements</li>
                 <li class="w3-padding-16">Elementary: 1st Place Mask-Making Contestant</li>
                 <li class="w3-padding-16">Senior High School: With High Honors (Grade 11 & 12)</li>
                 <li class="w3-padding-16">College: Honor Student (1st Year)</li>
@@ -98,7 +99,7 @@
             <!-- Course -->
             <div class="flex-box">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color3 w3-xlarge w3-padding-32 w3-text-light-grey">Course</li>
+                <li class="custom-color3 w3-xlarge w3-padding-32 w3-text-black">Course</li>
                 <li class="w3-padding-16">Technical-Vocational Livelihood (TVL) Information and Communications Technology (ICT)</li>
                 <li class="w3-padding-16">Bachelor of Computer Science with Specialization in Cybersecurity and Forensics</li>
               </ul>
@@ -107,8 +108,8 @@
         </div>
   
         <!-- IT Skills Section -->
-        <div class="w3-content w3-center w3-text-white" id="it">
-          <h2 class="w3-padding-16 w3-center w3-text-light-grey">IT Experience</h2>
+        <div class="w3-content w3-center w3-text-black" id="it">
+          <h2 class="w3-padding-16 w3-center w3-text-black">IT Experience</h2>
           <hr style="width:200px" class="center-line">
           <p class="w3-wide">Network Configuration</p>
           <div class="w3-white">
@@ -128,7 +129,7 @@
             <!-- Software -->
             <div class="flex-box">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color4 w3-xlarge w3-padding-32 w3-text-light-grey">Software</li>
+                <li class="custom-color4 w3-xlarge w3-padding-32 w3-text-black">Software</li>
                 <li class="w3-padding-16">Windows 7 and 10 Operating System Installation</li>
                 <li class="w3-padding-16">Windows Server 2012 r2 Configuration</li>
                 <li class="w3-padding-16">Ubuntu Linux Installation</li>
@@ -137,7 +138,7 @@
             <!-- Hardware -->
             <div class="flex-box">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color5 w3-xlarge w3-padding-32 w3-text-light-grey">Hardware</li>
+                <li class="custom-color5 w3-xlarge w3-padding-32 w3-text-black">Hardware</li>
                 <li class="w3-padding-16">Setting up Computer Networks & Servers</li>
                 <li class="w3-padding-16">Assembling/Disassembling Computer Systems</li>
                 <li class="w3-padding-16">Patch Panel Networking</li>
@@ -146,7 +147,7 @@
             <!-- Applications -->
             <div class="flex-box">
               <ul class="w3-ul w3-white w3-center w3-hover-opacity:hover">
-                <li class="custom-color6 w3-xlarge w3-padding-32 w3-text-light-grey">Applications</li>
+                <li class="custom-color6 w3-xlarge w3-padding-32 w3-text-black">Applications</li>
                 <li class="w3-padding-16">Basic Python, Java, HTML, MySQL</li>
                 <li class="w3-padding-16">Microsoft 365, Visual Studio Code, Oracle VirtualBox</li>
                 <li class="w3-padding-16">Figma, Canva, Ibis Paint X, Medibang, FireAlpaca</li>
