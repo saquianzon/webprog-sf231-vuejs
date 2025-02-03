@@ -3,7 +3,7 @@
     <ul>
       <li v-for="comment in comments" :key="comment.id">{{ comment.name }} {{ comment.comment }}</li>
     </ul>
-</template>
+  </template>
   
   <script></script>
   
