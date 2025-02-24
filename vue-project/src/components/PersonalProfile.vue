@@ -288,7 +288,7 @@
 </template>
 
 
-<script>
+<script></script>
  
 
 <style>
